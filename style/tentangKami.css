@@ -1,0 +1,349 @@
+:root {
+    --firstpurple: #704FE3;
+    --secondpurple: #DEC8FE;
+    --firstyellow:#FFD25D;
+    --secondyellow: #FFF1CE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #ffffff;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #ffffff;
+    height: 70px;
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.navbar .btn {
+    font-weight: bold;
+    color: var(--firstyellow);
+}
+
+.navbar .btn:hover {
+    color: var(--firstpurple);
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #EDE2FF;
+    color: var(--firstpurple);
+    border: 1px solid var(--firstpurple);
+    text-decoration: none;
+}
+
+.navbar .nav-link.active {
+    color: var(--firstpurple);
+}
+
+.tentangKami {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.tentangKami .content-tentangKami {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.tentangKami h1 {
+    color: black;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.tentangKami h6 {
+    margin-top: 30px;
+    color: black;
+}
+
+.tentangKami .eksplore {
+    margin: 40px 0 0 0;
+    padding: 10px 20px;
+    border: 1px solid #464646;
+    color: #464646;
+    border-radius: 20px;
+    text-decoration: none;
+    width: auto;
+    display: inline-block;
+}
+
+.tentangKami .eksplore:hover {
+    background-color: #464646;
+    color: var(--firstyellow);
+}
+
+.tentangKami .image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.tentangKami .top-image {
+    align-self: flex-start;
+    margin-bottom: 70px;
+}
+
+.tentangKami .center-image {
+    align-self: center;
+    width: 60px;
+    margin: 40px 0;
+}
+
+.tentangKami .bottom-image {
+    align-self: flex-end;
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+
+.tentangKami .side-image {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.tentangKami .introduction {
+    background-color: var(--firstpurple);
+    margin: 0px 60px 20px 60px;
+    border-radius: 30px;
+    padding: 30px 130px;
+}
+
+.tentangKami .introduction h1 {
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tentangKami .introduction p {
+    margin-top: 30px;
+}
+
+.tentangKami .visi {
+    margin: 0px 60px 20px 60px;
+    border-radius: 30px;
+    padding: 30px 130px;
+}
+
+.tentangKami .visi h1 {
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tentangKami .visi p {
+    text-align: justify;
+    margin-top: 30px;
+    color: #464646;
+}
+
+.tentangKami .misi {
+    background-color: var(--firstyellow);
+    margin: 0px 60px 20px 60px;
+    border-radius: 30px;
+    padding: 30px 60px;
+}
+
+.tentangKami .misi h1 {
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tentangKami .member {
+    margin: 0px 60px 20px 60px;
+    border-radius: 30px;
+    padding: 30px 60px;
+}
+
+.tentangKami .member h1 {
+    margin-top: 0px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.carousel-indicators .active {
+    background-color: grey;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 80px auto 0px auto;
+    overflow: hidden;
+}
+
+.carousel-inner .carousel-item {
+    border-radius: 30px;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    position: relative;
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: #464646;
+    color: white;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .footer-column {
+    flex: 1;
+    margin-top: 115px;
+    margin-bottom: 50px;
+    min-width: 100px;
+}
+
+.footer .footer-logo {
+    max-width: 220px;
+    margin: 40px 0px 20px 44px;
+}
+
+.footer .footer-header h6 {
+    margin-left: 50px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--firstyellow);
+    border-radius: 50%;
+    color: var(--firstpurple);
+    margin: 30px 5px;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+    background-color: var(--firstpurple);
+    color: #ffffff;
+}
+
+.footer .footer-column h5 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.footer .footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .footer-column ul li a:hover {
+    color: var(--firstyellow);
+}
+
+.footer .footer-bottom {
+    font-size: 14px;
+    color: #bbbbbb;
+    border-top: 1px solid var(--secondyellow);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+}
+
+.footer .credit-left, .credit-center, .credit-right {
+    flex: 1;
+}
+
+.footer .credit-left {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.footer .credit-left .panah {
+    display: flex;
+    color: var(--firstyellow);
+    border: 2px solid var(--firstyellow);
+    padding: 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footer .credit-left .panah:hover {
+    color: #ffffff;
+    background-color: var(--firstpurple);
+    border: 2px solid var(--firstpurple);
+}
+
+.footer .credit-center {
+    text-align: center;
+}
+
+.footer .credit-right {
+    text-align: right;
+}
